@@ -1,0 +1,237 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %}Artefacts{% endblock %}
+{% block css %}{% static 'main/css/style.css' %}{% endblock css %}
+{% block content %}
+<div class="main">
+    <div class="container">
+        <div class="block_1" style="background: url({% static 'main/image/background.svg' %}) center no-repeat; background-size: cover;">
+            <div class="name">
+                <p>МАГАЗИН ДРЕВНИХ МАГИЧЕСКИХ АРТЕФАКТОВ С ДОСТАВКОЙ ПО ВСЕЙ СОЛНЕЧНОЙ СИСТЕМЕ</p>
+            </div>
+
+            <div class="description">
+                <p>Добро пожаловать в наш магазин. Мы занимаемся поиском и продажей магических артефактов со всей вселенной уже более 3000 лет</p>
+            </div>
+
+            <a href="" class="to_buy">К покупкам</a>
+
+        </div>
+
+        <div class="block_2" style="background: url({% static 'main/image/background_block2.png' %}) center no-repeat; background-size: cover;">
+            <div class="title1">
+                <p>ТОВАРЫ, КОТОЫЕ ПРОДАВАЛИСЬ У НАС!</p>
+            </div>
+
+            <div class="title2">
+                <p>Ниже представлены ОЧЕНЬ редкие товары, которые были в наличии в нашем магазине</p>
+            </div>
+
+            <div class="sold">
+                <div class="sold1">
+                    <div class="sold_img">
+                        <img class="sold__img" src="{% static 'main/image/tesser.png' %}" alt="">
+                    </div>
+
+                    <div class="sold_descr">
+                        <p>ДРЕВНЕЙШИЙ БОЖЕСТВЕННЫЙ АРТЕФАКТ - ТЕССЕРАКТ</p>
+                    </div>
+
+                    <div class="soldout">
+                        <p class="txt">Sold Out</p>
+                    </div>
+                </div>
+
+                <div class="sold2">
+                    <div class="sold_img">
+                        <img class="sold__img" src="{% static 'main/image/portal_gun.png' %}" alt="">
+                    </div>
+
+                    <div class="sold_descr">
+                        <p>ПЕРВЫЙ ЭКЗЕМПЛЯР ПОРТАЛЬНОЙ ПУШКИ РИКА САНЧЕЗА</p>
+                    </div>
+
+                    <div class="soldout">
+                        <p class="txt">Sold Out</p>
+                    </div>
+                </div>
+
+                <div class="sold3">
+                    <div class="sold_img">
+                        <img class="sold__img" src="{% static 'main/image/ship.png' %}" alt="">
+                    </div>
+
+                    <div class="sold_descr">
+                        <p>ЧЕРНАЯ ЖЕМЧУЖИНА ДЖЕКА ВОРОБЬЯ В БУТЫЛКЕ</p>
+                    </div>
+
+                    <div class="soldout">
+                        <p class="txt">Sold Out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block_3" style="background: url({% static 'main/image/background_block3.png' %}) center no-repeat; background-size: cover;">
+            <div class="block3">
+                <p class="title_block3">МАГАЗИН ДРЕВНИХ МАГИЧЕСКИХ АРТЕФАКТОВ</p>
+
+                <p class="descr_block3">Наши магические артефакты - это окно в прошлое, волшебство, и загадки, которые предлагают вам уникальную возможность погрузиться в мир древних цивилизаций. Каждый артефакт в нашей коллекции — это не только предмет исторической ценности, но и источник тайн и секретов, которые были переданы из поколения в поколение.</p>
+
+                <p class="our_products">Наши продукты</p>
+
+                <div class="content_block3">
+                    <div class="block3_1">
+                        <p class="name_block3">Амулеты и обереги</p>
+
+                        <p class="opis_block3">Защитите себя и свой дом с помощью магических амулетов и оберегов, которые приносят удачу и отводят негативные энергии.</p>
+                    </div>
+
+                    <div class="block3_2">
+                        <p class="name_block3">Свитки и гримуары</p>
+
+                        <p class="opis_block3">Изучите древние заклинания и магические практики с нашими свитками и гримуарами, которые хранят знания, переданные веками.  </p>
+                    </div>
+
+                    <div class="block3_3">
+                        <p class="name_block3">Живопись и резьба</p>
+
+                        <p class="opis_block3">Изучите древние заклинания и магические практики с нашими свитками и гримуарами, которые хранят знания, переданные веками.  </p>
+                    </div>
+
+                    <div class="block3_4">
+                        <p class="name_block3">Реликвии и артефакты</p>
+
+                        <p class="opis_block3">Познакомьтесь с мощными магическими артефактами, которые привнесут в вашу жизнь волшебство и тайны древних цивилизаций.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_4">
+            <div class="block4">
+                <p class="title_block4">Почему выбирать нас?</p>
+
+                <div class="content_block4">
+                    <div class="block4_1">
+                        <img src="{% static 'main/image/list.png' %}" alt="" class="kartinka1">
+
+                        <p class="name_block4">Проверенное происхождение</p>
+
+                        <p class="opis_block4">Все наши артефакты проходят тщательную проверку на подлинность и происхождение. Мы гарантируем, что каждый артефакт аутентичен.</p>
+                    </div>
+
+                    <div class="block4_2">
+                        <img src="{% static 'main/image/basket.png' %}" alt="" class="kartinka2">
+
+                        <p class="name_block4">Широкий выбор</p>
+
+                        <p class="opis_block4">Наша коллекция включает в себя разнообразие магических предметов, чтобы удовлетворить разные интересы и потребности.</p>
+                    </div>
+
+                    <div class="block4_3">
+                        <img src="{% static 'main/image/car.png' %}" alt="" class="kartinka3">
+                        
+                        <p class="name_block4">Безопасная доставка</p>
+
+                        <p class="opis_block4">Мы уделяем особое внимание упаковке и доставке, чтобы гарантировать целостность артефактов.</p>
+                    </div>
+
+                    <div class="block4_4">
+                        <img src="{% static 'main/image/person.png' %}" alt="" class="kartinka4">
+                        
+                        <p class="name_block4">Консультации эксперта</p>
+
+                        <p class="opis_block4">Наши маги и эксперты всегда готовы помочь вам с выбором, а также дать советы по использованию артефактов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_5">
+            <div class="catalog">
+                <p>Каталог магических артефактов</p>
+            </div>
+
+            <div class="descr">
+                <p>В каталоге нашего магазина представлено большое количество строительных материалов</p>
+            </div>
+
+            <div class="products">
+                <div class="products__content">
+                    <div class="products__content-item">
+                        {% if object_list.count == 0 %}
+                        <h3 class="no_products">Товаров нет</h3>
+                            {% else %}
+                            {% for item in object_list %}
+
+                            <div class="product">
+                                <div class="img">
+                                    <img src="{{ item.image_source.url }}" width="188" height="170" style="border-radius: 30px" alt="">
+                                </div>
+
+                                <p class="title">{{ item.name }}</p>
+
+                                <p class="opisanie">{{ item.description }}</p>
+
+                                <p class="price">{{ item.price }} космических злотых</p>
+
+                                <a href="" class="button">Купить</a>
+
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+
+                        <a href="{% url 'add_product' %}" class="but_add">Добавить товар</a>
+                    </div>        
+                </div>
+            </div>
+    </div>
+        <div class="block_6" style="background: url({% static 'main/image/background_block6.png' %}) center no-repeat; background-size: cover;">
+            <div class="block6">
+                <div class="title_block6">
+                    <p>Отзывы наших клиентов</p>
+                </div>
+
+                <div class="descr_block6">
+                    <p>Что говорят о нашем интернет-магазине из разных уголков вселенной</p>
+                </div>
+
+                <div class="content_block6">
+                    <div class="block6_1">
+                        <img src="{% static 'main/image/Alien.png' %}" alt="" class="avatar_b6">
+
+                        <p class="name_b6">ارتيم</p>
+
+                        <p class="ocenka_b6">★★★★★</p>
+
+                        <p class="otziv_b6">مرحبا كيف حالك اسمي الحوض الصغير حالك اسمي </p>
+                    </div>
+
+                    <div class="block6_2">
+                        <img src="{% static 'main/image/Rick.png' %}" alt="" class="avatar_b6">
+
+                        <p class="name_b6">Рик Санчез</p>
+
+                        <p class="ocenka_b6">★☆☆☆☆</p>
+
+                        <p class="otziv_b6">Верните мою портальную пушку!!!</p>
+                    </div>
+
+                    <div class="block6_3">
+                        <img src="{% static 'main/image/Ilon.png' %}" alt="" class="avatar_b6">
+
+                        <p class="name_b6">Илон Маск</p>
+
+                        <p class="ocenka_b6">★★★★★</p>
+
+                        <p class="otziv_b6">Это мой магазин, ставлю класс!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+

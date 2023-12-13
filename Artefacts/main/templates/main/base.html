@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% block css %}{% endblock css %}">
+    <link href='https://fonts.googleapis.com/css?family=Ingrid Darling' rel='stylesheet'>
+
+    <link href="https://fonts.cdnfonts.com/css/porspican-serif" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/kelson" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Gochi Hand' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="{% url 'home' %}" class="logo">Artefacts</a>
+
+                <a class="number" href="">+6 666 666 66 66</a>
+
+                <div class="header__block">
+                    <nav class="nav">
+                        <a class="nav__link" href="">ПОЧЕМУ МЫ</a>
+                        <a class="nav__link" href="">КАТАЛОГ</a>
+                        <a class="nav__link" href="">ОТЗЫВЫ</a>
+                        <a class="nav__link" href="">КОНТАКТЫ</a>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <a href="{% url 'home' %}" class="logo_foot">Artefacts</a>
+
+                <p class="politic">Политика конфиденциальности</p>
+
+                <p class="contacts">Контакты</p>
+
+                <p class="connect">Мы всегда рады ответить на ваши вопросы и помочь вам сделать выбор. Свяжитесь с нами или позвоните по телефону +6 (666) 666 66 66.  Приходите и погрузитесь в магию древних времен с нашими магическими артефактами!</p>
+
+                <p class="numberr">+6 666 666 66 66</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

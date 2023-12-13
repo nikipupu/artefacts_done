@@ -1,0 +1,26 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %}Artefacts{% endblock %}
+{% block css %}{% static 'main/css/add_product.css' %}{% endblock css %}
+{% block content %}
+<div class="main">
+    <div class="container">
+        <div class="block_1" style="background: url({% static 'main/image/background.svg' %}) center no-repeat; background-size: cover;">
+            <div class="ramka">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <p class="tile">Добавление товара</p>
+                    
+                    {{form.image_source}}
+                    {{form.name}}
+                    {{form.description}}
+                    {{form.price}}
+
+                    <button type="submit" class="add">Добавить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
